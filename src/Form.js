@@ -89,7 +89,7 @@ export const Form = () => {
       return (
         parseFloat(formData.priceNetto) +
         parseFloat(formData.priceNetto) * (parseFloat(formData.vat) / 100)
-      );
+      ).toFixed(2);
     } else {
       return "";
     }
